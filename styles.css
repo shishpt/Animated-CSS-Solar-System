@@ -42,7 +42,7 @@
     position: absolute;
     top: 0%;
     left: 0%; 
-    background-color: black;
+    background-color: #363640;
     width: 100%;
     height: 100%;
 }
@@ -86,7 +86,6 @@
     border-radius: 2em;
     background: radial-gradient(#EFEFEF, #DDD8D4, #BBB7AB);
     animation: venusOrbit 6s linear infinite;
-
 }
 
 #earth {
@@ -111,7 +110,6 @@
     border-radius: 3em;
     background: radial-gradient(#8E6A5A, #FF9D6F, #663926);
     animation: marsOrbit 10s linear infinite;
-
 }
 
 #jupiter {
@@ -128,7 +126,7 @@
 }
 
 #saturn {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     /*transform: translate(450%, -50%);*/
@@ -137,26 +135,16 @@
     border-radius: 10em;
     background: linear-gradient(#7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171, #7B7869, #A49B72, #C5AB6E, #C3A171);
     animation: saturnOrbit 25s linear infinite;
-
 }
 
-#saturnRings {
-    position: inherit;
+.saturnRings {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     width: 3em;
     height: 3em;
     border-radius: 2em;
     background-color: red;
-
-}
-
-#saturnVOrbit {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 6em;
-    height: 6em;
-    border: 2px #4A437F dashed;
-    border-radius: 10em;
 }
 
 #uranus {
@@ -181,5 +169,4 @@
     border-radius: 4em;
     background-image: radial-gradient(circle, #89F3FF, #3E66F9, #212354);
     animation: neptuneOrbit 35s linear infinite;
-
 }

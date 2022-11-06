@@ -19,19 +19,19 @@
 }
 
 @keyframes marsOrbit {
-    from {transform: rotate(0deg) translateX(18.5em) rotate(0deg);}
-    to {transform: rotate(360deg) translateX(18.5em) rotate(-360deg);}
+    from {transform: rotate(0deg) translateX(20em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(20em) rotate(-360deg);}
 }
 
 @keyframes jupiterOrbit {
-    from {transform: rotate(0deg) translateX(22em) rotate(0deg);}
-    to {transform: rotate(360deg) translateX(22em) rotate(-360deg);
+    from {transform: rotate(0deg) translateX(30em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(30em) rotate(-360deg);
    }
 }
 
 @keyframes ioOrbit {
-    from {transform: rotate(0deg) translateX(2em) rotate(0deg);}
-    to {transform: rotate(360deg) translateX(2em) rotate(-360deg);}
+    from {transform: rotate(0deg) translateX(2.3em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(2.3em) rotate(-360deg);}
 }
 
 @keyframes europaOrbit {
@@ -40,30 +40,40 @@
 }
 
 @keyframes ganymedeOrbit {
-    from {transform: rotate(0deg) translateX(5em) rotate(0deg);}
-    to {transform: rotate(360deg) translateX(5em) rotate(-360deg);}
+    from {transform: rotate(0deg) translateX(4.7em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(4.7em) rotate(-360deg);}
 }
 
 @keyframes calistoOrbit {
-    from {transform: rotate(0deg) translateX(7em) rotate(0deg);}
-    to {transform: rotate(360deg) translateX(7em) rotate(-360deg);}
+    from {transform: rotate(0deg) translateX(6.3em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(6.3em) rotate(-360deg);}
 }
 
 @keyframes saturnOrbit {
-    from {transform: rotate(0deg) translateX(25em) rotate(0deg);}
+    from {transform: rotate(0deg) translateX(41em) rotate(0deg);}
 
-    to {transform: rotate(360deg) translateX(25em) rotate(-360deg);}
+    to {transform: rotate(360deg) translateX(41em) rotate(-360deg);}
 
 }
 
 @keyframes uranusOrbit {
-    from {transform: rotate(0deg) translateX(28em) rotate(0deg);}
-    to {transform: rotate(360deg) translateX(28em) rotate(-360deg);}
+    from {transform: rotate(0deg) translateX(47em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(47em) rotate(-360deg);}
 }
 
 @keyframes neptuneOrbit {
-    from {transform: rotate(0deg) translateX(31.5em) rotate(0deg);}
-    to {transform: rotate(360deg) translateX(31.5em) rotate(-360deg);}
+    from {transform: rotate(0deg) translateX(56em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(56em) rotate(-360deg);}
+}
+
+@keyframes mirandaOrbit {
+    from {transform: rotate(0deg) translateX(3.2em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(3.2em) rotate(-360deg);}
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 #board {
@@ -71,20 +81,20 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 0%;
-    left: 0%; 
+    top: 0em;
+    left: 0em; 
     background-color: #363640;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .sun {
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    height:200px;
-    border-radius: 50%;
+    width: 15em;
+    height:15em;
+    border-radius: 10em;
     background-color: #EA9300;
     box-shadow: 0 0 84px orange;
 }
@@ -94,16 +104,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 18.8em;
+    height: 18.8em;
+    border: .1em solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
 
 .mercury {
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 1em;
+    height: 1em;
     border-radius: 10em;
     background: radial-gradient(#B5A7A7, #CECCD1, #97979F);
     animation: mercuryOrbit 4s linear infinite;
@@ -114,16 +124,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 400px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 25em;
+    height: 25em;
+    border: .1em solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
 
 .venus {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
     border-radius: 2em;
     background: radial-gradient(#EFEFEF, #DDD8D4, #BBB7AB);
     animation: venusOrbit 6s linear infinite;
@@ -134,8 +144,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
-    height: 500px;
+    width: 31em;
+    height: 31em;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
@@ -145,8 +155,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 30px;
     background: radial-gradient(#FBFCFF, #8CB1DE, #3B5D38);
     animation: earthOrbit 8s linear infinite;
@@ -157,8 +167,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px;
-    height: 60px;
+    width: 3.7em;
+    height: 3.7em;
     border: 1px dashed rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
@@ -177,8 +187,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 600px;
-    height: 600px;
+    width: 650px;
+    height: 650px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
@@ -197,8 +207,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
-    height: 700px;
+    width: 950px;
+    height: 950px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
@@ -221,8 +231,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     border: 1px dashed rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
@@ -249,11 +259,11 @@
 
 .europa {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 10px;
     background: radial-gradient(#FBFCFF, #8CB1DE, #3B5D38);
-    animation: europaOrbit 4s linear infinite;
+    animation: europaOrbit 8s linear infinite;
 }
 
 .ganymedeOrbit {
@@ -273,7 +283,7 @@
     height: 25px;
     border-radius: 15px;
     background: radial-gradient(#FBFCFF, #8CB1DE, #3B5D38);
-    animation: ganymedeOrbit 4s linear infinite;
+    animation: ganymedeOrbit 16s linear infinite;
 }
 
 .calistoOrbit {
@@ -281,19 +291,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
     border: 1px dashed rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
 
 .calisto {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 10px;
     background: radial-gradient(#FBFCFF, #8CB1DE, #3B5D38);
-    animation: calistoOrbit 4s linear infinite;
+    animation: calistoOrbit 36s linear infinite;
 }
 
 .saturnOrbit {
@@ -301,9 +311,9 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 800px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    width: 1300px;
+    height: 1300px;
+    border: 3px solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
 .saturn {
@@ -332,8 +342,8 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 900px;
-    height: 900px;
+    width: 1500px;
+    height: 1500px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
@@ -353,17 +363,40 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    height: 1000px;
+    width: 1800px;
+    height: 1800px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
 
 .neptune {
     position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     border-radius: 3em;
     background-image: radial-gradient(circle, #89F3FF, #3E66F9, #212354);
     animation: neptuneOrbit 35s linear infinite;
+}
+
+.mirandaOrbit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 100%;
+}
+
+.miranda {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    border-radius: 3em;
+    background-image: radial-gradient(circle, #89F3FF, #3E66F9, #212354);
+    animation: mirandaOrbit 35s linear infinite;
 }

@@ -29,6 +29,26 @@
    }
 }
 
+@keyframes ioOrbit {
+    from {transform: rotate(0deg) translateX(2em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(2em) rotate(-360deg);}
+}
+
+@keyframes europaOrbit {
+    from {transform: rotate(0deg) translateX(3em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(3em) rotate(-360deg);}
+}
+
+@keyframes ganymedeOrbit {
+    from {transform: rotate(0deg) translateX(5em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(5em) rotate(-360deg);}
+}
+
+@keyframes calistoOrbit {
+    from {transform: rotate(0deg) translateX(7em) rotate(0deg);}
+    to {transform: rotate(360deg) translateX(7em) rotate(-360deg);}
+}
+
 @keyframes saturnOrbit {
     from {transform: rotate(0deg) translateX(25em) rotate(0deg);}
 
@@ -76,7 +96,7 @@
     align-items: center;
     width: 300px;
     height: 300px;
-    border: 1px solid rgba(150, 238, 139, 0.823);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
 
@@ -139,7 +159,7 @@
     justify-content: center;
     width: 60px;
     height: 60px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px dashed rgba(255, 255, 255, 0.12);
     border-radius: 100%;
 }
 
@@ -185,12 +205,95 @@
 
 .jupiter {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
     border-radius: 50px;
     background: linear-gradient(-10deg, #404436, #A79C86, #D2CFDA, #D39C7E, #90614D, #C88B3A, #D2CFDA, #90614D, #A79C86,#D2CFDA, #404436);
     animation: jupiterOrbit 20s linear infinite;
 
+}
+
+.ioOrbit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 100%;
+}
+
+.io {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: yellow;
+    animation: ioOrbit 4s linear infinite;
+}
+
+.europaOrbit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 100%;
+}
+
+.europa {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: radial-gradient(#FBFCFF, #8CB1DE, #3B5D38);
+    animation: europaOrbit 4s linear infinite;
+}
+
+.ganymedeOrbit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 100%;
+}
+
+.ganymede {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    background: radial-gradient(#FBFCFF, #8CB1DE, #3B5D38);
+    animation: ganymedeOrbit 4s linear infinite;
+}
+
+.calistoOrbit {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 170px;
+    border: 1px dashed rgba(255, 255, 255, 0.12);
+    border-radius: 100%;
+}
+
+.calisto {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: radial-gradient(#FBFCFF, #8CB1DE, #3B5D38);
+    animation: calistoOrbit 4s linear infinite;
 }
 
 .saturnOrbit {

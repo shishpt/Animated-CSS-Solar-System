@@ -1,8 +1,8 @@
-#Animated CSS Solar System 
+# Animated CSS Solar System 
 
 This project contains an HTML and CSS file for a responsive animated Solar System.
 
-##Responsiveness
+## Responsiveness
 
 ###Desktop
 Within the desktop viewing parameters the following can be seen:
